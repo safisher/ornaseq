@@ -1,10 +1,165 @@
 format-version: 1.2
 data-version: releases/2018-05-29
-remark: ORNASEQ
+remark: The following ontology is provided by Stephen A Fisher and Junhyong Kim to annotate next-generation sequencing experiments performed on RNA.
+import: http://purl.obolibrary.org/obo/ornaseq/properties_import.owl
+import: http://purl.obolibrary.org/obo/ornaseq/terms_import.owl
 ontology: ornaseq
-owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\nDeclaration(Class(<http://purl.obolibrary.org/obo/ORNASEQ_00000000>))\n############################\n#   Classes\n############################\n\n# Class: <http://purl.obolibrary.org/obo/ORNASEQ_00000000> (ornaseq)\n\nSubClassOf(<http://purl.obolibrary.org/obo/ORNASEQ_00000000> owl:Thing)\n\n\n)
+property_value: http://purl.org/dc/elements/1.1/contributor "Junhyong Kim" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Stephen A Fisher" xsd:string
+property_value: http://purl.org/dc/elements/1.1/license http://creativecommons.org/licenses/by/4.0/
+property_value: http://purl.org/dc/elements/1.1/title "Ontology for RNA sequencing (ORNASEQ)" xsd:string
+owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\nDeclaration(Class(<http://purl.obolibrary.org/obo/BFO_0000040>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/CHEBI_23367>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/GENEPIO_0000081>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/GENEPIO_0000085>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/IAO_0000027>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/IAO_0000028>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/IAO_0000594>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0000091>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0000094>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0000272>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0002467>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0002471>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0000465>))\n############################\n#   Classes\n############################\n\n# Class: <http://purl.obolibrary.org/obo/BFO_0000040> (<http://purl.obolibrary.org/obo/BFO_0000040>)\n\nSubClassOf(<http://purl.obolibrary.org/obo/BFO_0000040> owl:Thing)\n\n# Class: <http://purl.obolibrary.org/obo/CHEBI_23367> (<http://purl.obolibrary.org/obo/CHEBI_23367>)\n\nSubClassOf(<http://purl.obolibrary.org/obo/CHEBI_23367> owl:Thing)\n\n# Class: <http://purl.obolibrary.org/obo/GENEPIO_0000081> (<http://purl.obolibrary.org/obo/GENEPIO_0000081>)\n\nSubClassOf(<http://purl.obolibrary.org/obo/GENEPIO_0000081> owl:Thing)\n\n# Class: <http://purl.obolibrary.org/obo/GENEPIO_0000085> (<http://purl.obolibrary.org/obo/GENEPIO_0000085>)\n\nSubClassOf(<http://purl.obolibrary.org/obo/GENEPIO_0000085> owl:Thing)\n\n# Class: <http://purl.obolibrary.org/obo/IAO_0000027> (<http://purl.obolibrary.org/obo/IAO_0000027>)\n\nSubClassOf(<http://purl.obolibrary.org/obo/IAO_0000027> owl:Thing)\n\n# Class: <http://purl.obolibrary.org/obo/IAO_0000028> (<http://purl.obolibrary.org/obo/IAO_0000028>)\n\nSubClassOf(<http://purl.obolibrary.org/obo/IAO_0000028> owl:Thing)\n\n# Class: <http://purl.obolibrary.org/obo/IAO_0000594> (<http://purl.obolibrary.org/obo/IAO_0000594>)\n\nSubClassOf(<http://purl.obolibrary.org/obo/IAO_0000594> owl:Thing)\n\n# Class: <http://purl.obolibrary.org/obo/OBI_0000091> (<http://purl.obolibrary.org/obo/OBI_0000091>)\n\nSubClassOf(<http://purl.obolibrary.org/obo/OBI_0000091> owl:Thing)\n\n# Class: <http://purl.obolibrary.org/obo/OBI_0000094> (<http://purl.obolibrary.org/obo/OBI_0000094>)\n\nSubClassOf(<http://purl.obolibrary.org/obo/OBI_0000094> owl:Thing)\n\n# Class: <http://purl.obolibrary.org/obo/OBI_0000272> (<http://purl.obolibrary.org/obo/OBI_0000272>)\n\nSubClassOf(<http://purl.obolibrary.org/obo/OBI_0000272> owl:Thing)\n\n# Class: <http://purl.obolibrary.org/obo/OBI_0002467> (<http://purl.obolibrary.org/obo/OBI_0002467>)\n\nSubClassOf(<http://purl.obolibrary.org/obo/OBI_0002467> owl:Thing)\n\n# Class: <http://purl.obolibrary.org/obo/OBI_0002471> (<http://purl.obolibrary.org/obo/OBI_0002471>)\n\nSubClassOf(<http://purl.obolibrary.org/obo/OBI_0002471> owl:Thing)\n\n# Class: <http://purl.obolibrary.org/obo/UBERON_0000465> (<http://purl.obolibrary.org/obo/UBERON_0000465>)\n\nSubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000465> owl:Thing)\n\n\n)
 
 [Term]
-id: ORNASEQ:00000000
-name: ornaseq
+id: ORNASEQ:0000001
+name: date of specimen amplification
+is_a: OBI:0002471
+relationship: RO:0002223 ORNASEQ:0000003 ! enzymatic amplification protocol
+property_value: definition "A date process started item that indicates when a specimen was run through the amplification protocol prior to library preparation and sequencing." xsd:string
+property_value: IAO:0000117 "PERSON: Junhyong Kim" xsd:string
+property_value: IAO:0000117 "PERSON: Stephen A. Fisher" xsd:string
+property_value: IAO:0000118 "amplified date" xsd:string
+
+[Term]
+id: ORNASEQ:0000002
+name: date of specimen library preparation
+is_a: OBI:0002471
+relationship: RO:0002223 ORNASEQ:0000007 ! library preparation protocol
+property_value: definition "A date process started item that indicates when a specimen was run through the library preparation protocol prior to sequencing." xsd:string
+property_value: IAO:0000117 "PERSON: Junhyong Kim" xsd:string
+property_value: IAO:0000117 "PERSON: Stephen A. Fisher" xsd:string
+property_value: IAO:0000118 "library preparation date" xsd:string
+
+[Term]
+id: ORNASEQ:0000003
+name: enzymatic amplification protocol
+is_a: OBI:0000272
+property_value: definition "A protocol document that contains detailed instructions on how to perform an enzymatic amplification planned process." xsd:string
+property_value: IAO:0000117 "PERSON: Junhyong Kim" xsd:string
+property_value: IAO:0000117 "PERSON: Stephen A. Fisher" xsd:string
+property_value: IAO:0000118 "amplification protocol" xsd:string
+
+[Term]
+id: ORNASEQ:0000004
+name: experiment name
+is_a: IAO:0000028
+property_value: definition "The name for identifying an experiment." xsd:string
+property_value: IAO:0000116 "Exists in MS (Mass spectrometry ontology) with parent \"quantification object attribute\"" xsd:string
+property_value: IAO:0000117 "PERSON: Junhyong Kim" xsd:string
+property_value: IAO:0000117 "PERSON: Stephen A. Fisher" xsd:string
+
+[Term]
+id: ORNASEQ:0000005
+name: Illumina TruSeq Rapid SBS Kit v2
+is_a: GENEPIO:0000081
+relationship: OBI:0000312 OBI:0000094
+property_value: definition "A processed material that is a sequencing kit used with Illumina HiSeq 2500 and 1500 sequencers allowing for single-end or paired-end sequencing." xsd:string
+property_value: IAO:0000117 "PERSON: Junhyong Kim" xsd:string
+property_value: IAO:0000117 "PERSON: Stephen A. Fisher" xsd:string
+property_value: IAO:0000119 https://www.illumina.com/products/by-type/sequencing-kits/cluster-gen-sequencing-reagents/hiseq-rapid-sbs-kit.html xsd:string
+
+[Term]
+id: ORNASEQ:0000006
+name: Illumina TruSeq Stranded
+is_a: GENEPIO:0000085
+relationship: OBI:0000312 OBI:0000094
+property_value: definition "A processed material that is used to create a sequencing library that retains mRNA strand orientation." xsd:string
+property_value: IAO:0000117 "PERSON: Junhyong Kim" xsd:string
+property_value: IAO:0000117 "PERSON: Stephen A. Fisher" xsd:string
+property_value: IAO:0000119 https://www.illumina.com/products/by-type/sequencing-kits/library-prep-kits/truseq-stranded-mrna.html xsd:string
+
+[Term]
+id: ORNASEQ:0000007
+name: library preparation protocol
+is_a: OBI:0000272
+property_value: definition "A protocol document that contains detailed instructions on how to perform a library preparation planned process." xsd:string
+property_value: IAO:0000117 "PERSON: Junhyong Kim" xsd:string
+property_value: IAO:0000117 "PERSON: Stephen A. Fisher" xsd:string
+
+[Term]
+id: ORNASEQ:0000008
+name: number of flow cell lanes
+is_a: IAO:0000027
+property_value: definition "A data item that indicates the number of lanes in a flow cell that were used to sequence a specimen" xsd:string
+property_value: IAO:0000117 "PERSON: Junhyong Kim" xsd:string
+property_value: IAO:0000117 "PERSON: Stephen A. Fisher" xsd:string
+property_value: IAO:0000119 http://scap-t.org/?q=content/sample-attributes-data-dictionary xsd:string
+
+[Term]
+id: ORNASEQ:0000009
+name: number of flow cells
+is_a: IAO:0000027
+property_value: definition "A data item that indicates the number of flow cells used to sequence a specimen." xsd:string
+property_value: IAO:0000117 "PERSON: Junhyong Kim" xsd:string
+property_value: IAO:0000117 "PERSON: Stephen A. Fisher" xsd:string
+property_value: IAO:0000119 http://scap-t.org/?q=content/sample-attributes-data-dictionary xsd:string
+
+[Term]
+id: ORNASEQ:0000010
+name: pairwise sequence alignment application
+is_a: IAO:0000594
+property_value: definition "A software application that implements a pairwise sequence alignment algorithm to attempt to align two molecular sequences (nucleic acid or protein sequences)." xsd:string
+property_value: IAO:0000117 "PERSON: Junhyong Kim" xsd:string
+property_value: IAO:0000117 "PERSON: Stephen A. Fisher" xsd:string
+
+[Term]
+id: ORNASEQ:0000011
+name: region of material anatomical entity
+is_a: UBERON:0000465
+property_value: definition "An area within a material anatomical entity that is distinct from the other areas of that entity such as the parietal cortex, hippocampus CA1 and amygdala." xsd:string
+property_value: IAO:0000117 "PERSON: Junhyong Kim" xsd:string
+property_value: IAO:0000117 "PERSON: Stephen A. Fisher" xsd:string
+
+[Term]
+id: ORNASEQ:0000012
+name: RNA harvest compound
+is_a: CHEBI:23367
+relationship: OBI:0000312 OBI:0000094
+relationship: RO:0000087 OBI:0000091
+property_value: definition "A molecular entity that is an engineered molecule which enables the collection of RNA from cells." xsd:string
+property_value: IAO:0000117 "PERSON: Junhyong Kim" xsd:string
+property_value: IAO:0000117 "PERSON: Stephen A. Fisher" xsd:string
+
+[Term]
+id: ORNASEQ:0000013
+name: specimen harvest source type
+is_a: BFO:0000040
+property_value: definition "A material entity that contained the specimen during harvesting such as a primary culture, tissue, or fixed section." xsd:string
+property_value: IAO:0000117 "PERSON: Junhyong Kim" xsd:string
+property_value: IAO:0000117 "PERSON: Stephen A. Fisher" xsd:string
+
+[Term]
+id: ORNASEQ:0000014
+name: specimen harvest source unit
+is_a: BFO:0000040
+property_value: definition "A material entity that represents the number of number of material entities used during harvesting; for example, a single cell, pooled single cells, tissue, a culture dish, or a coverslip." xsd:string
+property_value: IAO:0000117 "PERSON: Junhyong Kim" xsd:string
+property_value: IAO:0000117 "PERSON: Stephen A. Fisher" xsd:string
+
+[Term]
+id: ORNASEQ:0000015
+name: star
+is_a: ORNASEQ:0000010 ! pairwise sequence alignment application
+property_value: definition "A software application that implements a RNA-seq alignment algorithm that uses uncompressed suffix arrays and a mapping algorithm similar to those used in large-scale genome alignment tools to align RNA-seq reads to a genomic reference." xsd:string
+property_value: IAO:0000117 "PERSON: Junhyong Kim" xsd:string
+property_value: IAO:0000117 "PERSON: Stephen A. Fisher" xsd:string
+property_value: IAO:0000119 https://github.com/alexdobin/STAR xsd:string
+
+[Term]
+id: ORNASEQ:0000016
+name: TIVA tag
+is_a: ORNASEQ:0000012 ! RNA harvest compound
+property_value: definition "A molecular entity that is an engineered molecule which upon photoactivation enables mRNA capture from single cells in live tissue." xsd:string
+property_value: IAO:0000117 "PERSON: Junhyong Kim" xsd:string
+property_value: IAO:0000117 "PERSON: Stephen A. Fisher" xsd:string
+property_value: IAO:0000119 doi:10.1038/nmeth.2804 xsd:string
+
+[Term]
+id: ORNASEQ:0000017
+name: verse
+is_a: OBI:0002467
+property_value: definition "An alignment counting application that assigns gene features to genomic alignments using a hierarchical assignment scheme, which allows simultaneous quantification of multiple feature types or annotation levels without repeatedly assigning reads." xsd:string
+property_value: IAO:0000117 "PERSON: Junhyong Kim" xsd:string
+property_value: IAO:0000117 "PERSON: Stephen A. Fisher" xsd:string
+property_value: IAO:0000119 http://kim.bio.upenn.edu/software/verse.shtml xsd:string
 

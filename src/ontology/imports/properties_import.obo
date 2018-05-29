@@ -1,0 +1,57 @@
+format-version: 1.2
+ontology: ornaseq/dev/properties_import
+
+[Typedef]
+id: BFO:0000050
+name: part of
+def: "a core relation that holds between a part and its whole" []
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/ro.owl
+is_transitive: true
+is_a: RO:0002131 ! overlaps
+
+[Typedef]
+id: OBI:0000312
+name: is_specified_output_of
+def: "A relation between a planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of." []
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+is_a: RO:0000056 ! participates in
+
+[Typedef]
+id: RO:0000053
+name: bearer of
+def: "a relation between an independent continuant (the bearer) and a specifically dependent continuant (the dependent), in which the dependent specifically depends on the bearer for its existence" []
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/ro.owl
+
+[Typedef]
+id: RO:0000056
+name: participates in
+def: "a relation between a continuant and a process, in which the continuant is somehow involved in the process" []
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/ro.owl
+
+[Typedef]
+id: RO:0000087
+name: has role
+def: "a relation between an independent continuant (the bearer) and a role, in which the role specifically depends on the bearer for its existence" []
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/ro.owl
+is_a: RO:0000053 ! bearer of
+
+[Typedef]
+id: RO:0002131
+name: overlaps
+def: "x overlaps y if and only if there exists some z such that x has part z and z part of y" []
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/ro.owl
+is_a: RO:0002323 ! mereotopologically related to
+
+[Typedef]
+id: RO:0002223
+name: starts
+def: "inverse of starts with" []
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/ro.owl
+is_a: BFO:0000050 ! part of
+
+[Typedef]
+id: RO:0002323
+name: mereotopologically related to
+def: "A mereological relationship or a topological relationship" []
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/ro.owl
+

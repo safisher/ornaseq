@@ -1,13 +1,211 @@
-Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
-Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
-Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
-Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
-Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/ornaseq.owl#"
+     xml:base="http://purl.obolibrary.org/obo/ornaseq.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	 xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
 
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/ornaseq.owl">
+        <dc:title xml:lang="en">Ontology for RNA sequencing (ORNASEQ)</dc:title>
+        <dc:contributor>Stephen A Fisher</dc:contributor>
+        <dc:contributor>Junhyong Kim</dc:contributor>
+        <dc:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+        <rdfs:comment>The following ontology is provided by Stephen A Fisher and Junhyong Kim to annotate next-generation sequencing experiments performed on RNA.</rdfs:comment>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ornaseq/properties_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ornaseq/terms_import.owl"/>
+    </owl:Ontology>
 
-Ontology(<http://purl.obolibrary.org/obo/ornaseq.owl>
-Annotation(rdfs:comment "ORNASEQ")
+    <!-- CLASSES -->
 
-Declaration(Class(<http://purl.obolibrary.org/obo/ORNASEQ_00000000>))
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ORNASEQ_00000000> "ornaseq"@en)
-)
+    <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ORNASEQ_0000001">
+        <rdfs:label xml:lang="en">date of specimen amplification</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0002471"/>
+        <rdfs:definition>A date process started item that indicates when a specimen was run through the amplification protocol prior to library preparation and sequencing.</rdfs:definition>
+        <obo:IAO_0000118 xml:lang="en">amplified date</obo:IAO_0000118>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Stephen A. Fisher</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Junhyong Kim</obo:IAO_0000117>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002223"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ORNASEQ_0000003"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ORNASEQ_0000002">
+        <rdfs:label xml:lang="en">date of specimen library preparation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0002471"/>
+        <rdfs:definition>A date process started item that indicates when a specimen was run through the library preparation protocol prior to sequencing.</rdfs:definition>
+        <obo:IAO_0000118 xml:lang="en">library preparation date</obo:IAO_0000118>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Stephen A. Fisher</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Junhyong Kim</obo:IAO_0000117>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002223"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ORNASEQ_0000007"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ORNASEQ_0000013">
+        <rdfs:label xml:lang="en">specimen harvest source type</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:definition>A material entity that contained the specimen during harvesting such as a primary culture, tissue, or fixed section.</rdfs:definition>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Stephen A. Fisher</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Junhyong Kim</obo:IAO_0000117>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ORNASEQ_0000014">
+        <rdfs:label xml:lang="en">specimen harvest source unit</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:definition>A material entity that represents the number of number of material entities used during harvesting; for example, a single cell, pooled single cells, tissue, a culture dish, or a coverslip.</rdfs:definition>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Stephen A. Fisher</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Junhyong Kim</obo:IAO_0000117>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ORNASEQ_0000012">
+        <rdfs:label xml:lang="en">RNA harvest compound</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
+        <rdfs:definition>A molecular entity that is an engineered molecule which enables the collection of RNA from cells.</rdfs:definition>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Stephen A. Fisher</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Junhyong Kim</obo:IAO_0000117>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000091"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ORNASEQ_0000007">
+        <rdfs:label xml:lang="en">library preparation protocol</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000272"/>
+        <rdfs:definition>A protocol document that contains detailed instructions on how to perform a library preparation planned process.</rdfs:definition>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Stephen A. Fisher</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Junhyong Kim</obo:IAO_0000117>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ORNASEQ_0000003">
+        <rdfs:label xml:lang="en">enzymatic amplification protocol</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000272"/>
+        <rdfs:definition>A protocol document that contains detailed instructions on how to perform an enzymatic amplification planned process.</rdfs:definition>
+        <obo:IAO_0000118 xml:lang="en">amplification protocol</obo:IAO_0000118>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Stephen A. Fisher</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Junhyong Kim</obo:IAO_0000117>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ORNASEQ_0000010">
+        <rdfs:label xml:lang="en">pairwise sequence alignment application</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000594"/>
+        <rdfs:definition>A software application that implements a pairwise sequence alignment algorithm to attempt to align two molecular sequences (nucleic acid or protein sequences).</rdfs:definition>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Stephen A. Fisher</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Junhyong Kim</obo:IAO_0000117>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ORNASEQ_0000011">
+        <rdfs:label xml:lang="en">region of material anatomical entity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000465"/>
+        <rdfs:definition>An area within a material anatomical entity that is distinct from the other areas of that entity such as the parietal cortex, hippocampus CA1 and amygdala.</rdfs:definition>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Stephen A. Fisher</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Junhyong Kim</obo:IAO_0000117>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ORNASEQ_0000004">
+        <rdfs:label xml:lang="en">experiment name</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000028"/>
+        <rdfs:definition>The name for identifying an experiment.</rdfs:definition>
+        <obo:IAO_0000116 xml:lang="en">Exists in MS (Mass spectrometry ontology) with parent "quantification object attribute"</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Stephen A. Fisher</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Junhyong Kim</obo:IAO_0000117>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ORNASEQ_0000016">
+        <rdfs:label xml:lang="en">TIVA tag</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ORNASEQ_0000012"/>
+        <rdfs:definition>A molecular entity that is an engineered molecule which upon photoactivation enables mRNA capture from single cells in live tissue.</rdfs:definition>
+        <obo:IAO_0000119 xml:lang="en">doi:10.1038/nmeth.2804</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Stephen A. Fisher</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Junhyong Kim</obo:IAO_0000117>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ORNASEQ_0000017">
+        <rdfs:label xml:lang="en">verse</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0002467"/>
+        <rdfs:definition>An alignment counting application that assigns gene features to genomic alignments using a hierarchical assignment scheme, which allows simultaneous quantification of multiple feature types or annotation levels without repeatedly assigning reads.</rdfs:definition>
+        <obo:IAO_0000119 xml:lang="en">http://kim.bio.upenn.edu/software/verse.shtml</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Stephen A. Fisher</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Junhyong Kim</obo:IAO_0000117>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ORNASEQ_0000009">
+        <rdfs:label xml:lang="en">number of flow cells</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:definition>A data item that indicates the number of flow cells used to sequence a specimen.</rdfs:definition>
+        <obo:IAO_0000119 xml:lang="en">http://scap-t.org/?q=content/sample-attributes-data-dictionary</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Stephen A. Fisher</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Junhyong Kim</obo:IAO_0000117>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ORNASEQ_0000008">
+        <rdfs:label xml:lang="en">number of flow cell lanes</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:definition>A data item that indicates the number of lanes in a flow cell that were used to sequence a specimen</rdfs:definition>
+        <obo:IAO_0000119 xml:lang="en">http://scap-t.org/?q=content/sample-attributes-data-dictionary</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Stephen A. Fisher</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Junhyong Kim</obo:IAO_0000117>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ORNASEQ_0000015">
+        <rdfs:label xml:lang="en">star</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ORNASEQ_0000010"/>
+        <rdfs:definition>A software application that implements a RNA-seq alignment algorithm that uses uncompressed suffix arrays and a mapping algorithm similar to those used in large-scale genome alignment tools to align RNA-seq reads to a genomic reference.</rdfs:definition>
+        <obo:IAO_0000119 xml:lang="en">https://github.com/alexdobin/STAR</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Stephen A. Fisher</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Junhyong Kim</obo:IAO_0000117>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ORNASEQ_0000005">
+        <rdfs:label xml:lang="en">Illumina TruSeq Rapid SBS Kit v2</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GENEPIO_0000081"/>
+        <rdfs:definition>A processed material that is a sequencing kit used with Illumina HiSeq 2500 and 1500 sequencers allowing for single-end or paired-end sequencing.</rdfs:definition>
+        <obo:IAO_0000119 xml:lang="en">https://www.illumina.com/products/by-type/sequencing-kits/cluster-gen-sequencing-reagents/hiseq-rapid-sbs-kit.html</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Stephen A. Fisher</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Junhyong Kim</obo:IAO_0000117>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ORNASEQ_0000006">
+        <rdfs:label xml:lang="en">Illumina TruSeq Stranded</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GENEPIO_0000085"/>
+        <rdfs:definition>A processed material that is used to create a sequencing library that retains mRNA strand orientation.</rdfs:definition>
+        <obo:IAO_0000119 xml:lang="en">https://www.illumina.com/products/by-type/sequencing-kits/library-prep-kits/truseq-stranded-mrna.html</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Stephen A. Fisher</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Junhyong Kim</obo:IAO_0000117>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+</rdf:RDF>
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->

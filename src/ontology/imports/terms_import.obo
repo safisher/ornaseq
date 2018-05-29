@@ -1,0 +1,821 @@
+format-version: 1.2
+ontology: ornaseq/dev/terms_import
+
+[Term]
+id: BFO:0000001
+name: entity
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/bfo.owl
+
+[Term]
+id: BFO:0000002
+name: continuant
+is_a: BFO:0000001 ! entity
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/bfo.owl
+
+[Term]
+id: BFO:0000003
+name: occurrent
+is_a: BFO:0000001 ! entity
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/bfo.owl
+
+[Term]
+id: BFO:0000004
+name: independent continuant
+def: "b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])" []
+is_a: BFO:0000002 ! continuant
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/bfo.owl
+
+[Term]
+id: BFO:0000015
+name: process
+def: "p is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])" []
+is_a: BFO:0000003 ! occurrent
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/bfo.owl
+
+[Term]
+id: BFO:0000017
+name: realizable entity
+is_a: BFO:0000020 ! specifically dependent continuant
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/bfo.owl
+
+[Term]
+id: BFO:0000020
+name: specifically dependent continuant
+def: "b is a specifically dependent continuant = Def. b is a continuant & there is some independent continuant c which is not a spatial region and which is such that b s-depends_on c at every time t during the course of b’s existence. (axiom label in BFO2 Reference: [050-003])" []
+is_a: BFO:0000002 ! continuant
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/bfo.owl
+
+[Term]
+id: BFO:0000023
+name: role
+is_a: BFO:0000017 ! realizable entity
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/bfo.owl
+
+[Term]
+id: BFO:0000031
+name: generically dependent continuant
+def: "b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001])" []
+is_a: BFO:0000002 ! continuant
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/bfo.owl
+
+[Term]
+id: BFO:0000040
+name: material entity
+is_a: BFO:0000004 ! independent continuant
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/bfo.owl
+
+[Term]
+id: CHEBI:16991
+name: deoxyribonucleic acid
+def: "High molecular weight, linear polymers, composed of nucleotides containing deoxyribose and linked by phosphodiester bonds; DNA contain the genetic information of organisms." []
+is_a: CHEBI:23367 ! molecular entity
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/chebi.owl
+
+[Term]
+id: CHEBI:23367
+name: molecular entity
+def: "Any constitutionally or isotopically distinct atom, molecule, ion, ion pair, radical, radical ion, complex, conformer etc., identifiable as a separately distinguishable entity." []
+is_a: BFO:0000040 ! material entity
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/chebi.owl
+
+[Term]
+id: CL:0000000
+name: cell
+def: "A material entity of anatomical origin (part of or deriving from an organism) that has as its parts a maximally connected cell compartment surrounded by a plasma membrane." []
+is_a: BFO:0000040 ! material entity
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/cl.owl
+
+[Term]
+id: CL:0000127
+name: astrocyte
+def: "A class of large neuroglial (macroglial) cells in the central nervous system - the largest and most numerous neuroglial cells in the brain and spinal cord. Astrocytes (from 'star' cells) are irregularly shaped with many long processes, including those with 'end feet' which form the glial (limiting) membrane and directly and indirectly contribute to the blood-brain barrier. They regulate the extracellular ionic and chemical environment, and 'reactive astrocytes' (along with microglia) respond to injury." []
+is_a: CL:0000000 ! cell
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/cl.owl
+
+[Term]
+id: CL:0000449
+name: brown fat cell
+def: "A cell from the thermogenic form of adipose tissue found in many species,  particularly in newborns and hibernating mammals, but also in lesser amounts in adults of other mammals including humans. Brown fat is capable of rapid liberation of energy and seems to be important in the maintenance of body temperature immediately after birth and upon waking from hibernation." []
+is_a: CL:0000000 ! cell
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/cl.owl
+
+[Term]
+id: CL:0000540
+name: neuron
+def: "The basic cellular unit of nervous tissue. Each neuron consists of a body, an axon, and dendrites. Their purpose is to receive, conduct, and transmit impulses in the nervous system." []
+is_a: CL:0000000 ! cell
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/cl.owl
+
+[Term]
+id: CL:0000746
+name: cardiac muscle cell
+def: "Cardiac muscle cells are striated muscle cells that are responsible for heart contraction. In mammals, the contractile fiber resembles those of skeletal muscle but are only one third as large in diameter, are richer in sarcoplasm, and contain centrally located instead of peripheral nuclei." []
+is_a: CL:0000000 ! cell
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/cl.owl
+
+[Term]
+id: CL:2000029
+name: central nervous system neuron
+def: "Any neuron that is part of a central nervous system." []
+is_a: CL:0000540 ! neuron
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/cl.owl
+
+[Term]
+id: EFO:0000683
+name: replicate
+def: "A role played by a a biological sample in the context of an experiment where the intent is that biological or technical variation is measured." []
+is_a: BFO:0000023 ! role
+property_value: IAO:0000412 http://www.ebi.ac.uk/efo/efo.owl
+
+[Term]
+id: EFO:0004155
+name: FASTQ format
+def: "FASTQ format is a text-based format for storing both a biological sequence (usually nucleotide sequence) and its corresponding quality scores." []
+is_a: IAO:0000098 ! data format specification
+property_value: IAO:0000412 http://www.ebi.ac.uk/efo/efo.owl
+
+[Term]
+id: EFO:0004157
+name: BAM format
+def: "BAM is the compressed binary version of the Sequence Alignment/Map (SAM) format" []
+is_a: IAO:0000098 ! data format specification
+property_value: IAO:0000412 http://www.ebi.ac.uk/efo/efo.owl
+
+[Term]
+id: EFO:0004420
+name: genome
+def: "A genome is the full genetic content of an organism, contained in either DNA or RNA (such as for viruses)." []
+is_a: BFO:0000040 ! material entity
+property_value: IAO:0000412 http://www.ebi.ac.uk/efo/efo.owl
+
+[Term]
+id: EFO:0004421
+name: transcriptome
+def: "The transcriptome is the set of all RNA molecules, including mRNA, rRNA, tRNA, and other non-coding RNA produced in one or a population of cells." []
+is_a: BFO:0000040 ! material entity
+property_value: IAO:0000412 http://www.ebi.ac.uk/efo/efo.owl
+
+[Term]
+id: EFO:0005630
+name: CEL data file format
+def: "CEL data file format describes the format used in a CEL file for storing the results of the intensity calculations on the pixel values of a DAT file. This includes an intensity value, standard deviation of the intensity, the number of pixels used to calculate the intensity value, a flag to indicate an outlier as calculated by the algorithm and a user defined flag indicating the feature should be excluded from future analysis. The file stores the previously stated data for each feature on the probe array." []
+is_a: IAO:0000098 ! data format specification
+property_value: IAO:0000412 http://www.ebi.ac.uk/efo/efo.owl
+
+[Term]
+id: GENEPIO:0000069
+name: sequencing run date
+def: "date the sequencing run was performed" []
+is_a: IAO:0000027 ! data item
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/genepio.owl
+
+[Term]
+id: GENEPIO:0000081
+name: sequencing kit
+def: "Pre-filled, ready-to-use reagent cartridges. Used to produce improved chemistry, cluster density and read length as well as improve quality (Q) scores. Reagent components are encoded to interact with the sequencing system to validate compatibility with user-defined applications." []
+is_a: OBI:0000047 ! processed material
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/genepio.owl
+
+[Term]
+id: GENEPIO:0000085
+name: library preparation kit
+def: "Packaged kits (containing adapters, indexes, enzymes, buffers etc), tailored for specific sequencing workflows, which allow the simplified preparation of sequencing-ready libraries for small genomes, amplicons, and plasmids." []
+is_a: OBI:0000047 ! processed material
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/genepio.owl
+
+[Term]
+id: GENEPIO:0001170
+name: organism datum
+is_a: IAO:0000109 ! measurement datum
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/genepio.owl
+
+[Term]
+id: GO:0005575
+name: cellular_component
+def: "A location, relative to cellular compartments and structures, occupied by a macromolecular machine when it carries out a molecular function. There are two ways in which the gene ontology describes locations of gene products: (1) relative to cellular structures (e.g., cytoplasmic side of plasma membrane) or compartments (e.g., mitochondrion), and (2) the stable macromolecular complexes of which they are parts (e.g., the ribosome)." []
+is_a: BFO:0000040 ! material entity
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/go.owl
+
+[Term]
+id: GO:0005739
+name: mitochondrion
+def: "A semiautonomous, self replicating organelle that occurs in varying numbers, shapes, and sizes in the cytoplasm of virtually all eukaryotic cells. It is notably the site of tissue respiration." []
+is_a: GO:0044464 ! cell part
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/go.owl
+
+[Term]
+id: GO:0030425
+name: dendrite
+def: "A neuron projection that has a short, tapering, morphology. Dendrites receive and integrate signals from other neurons or from sensory stimuli, and conduct nerve impulses towards the axon or the cell body. In most neurons, the impulse is conveyed from dendrites to axon via the cell body, but in some types of unipolar neuron, the impulse does not travel via the cell body." []
+is_a: GO:0044464 ! cell part
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/go.owl
+
+[Term]
+id: GO:0044297
+name: cell body
+def: "The portion of a cell bearing surface projections such as axons, dendrites, cilia, or flagella that includes the nucleus, but excludes all cell projections." []
+is_a: GO:0044464 ! cell part
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/go.owl
+
+[Term]
+id: GO:0044464
+name: cell part
+def: "Any constituent part of a cell, the basic structural and functional unit of all organisms." []
+is_a: GO:0005575 ! cellular_component
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/go.owl
+
+[Term]
+id: IAO:0000010
+name: software
+def: "Software is a plan specification composed of a series of instructions that can be \ninterpreted by or directly executed by a processing unit." []
+is_a: IAO:0000104 ! plan specification
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+
+[Term]
+id: IAO:0000017
+name: model number
+def: "A model number is an information content entity specifically borne by catalogs, design specifications, advertising materials, inventory systems and similar  that is about manufactured objects of the same class. The model number is an alternative term for the class. The manufactered objects may or may not also bear the model number. Model numbers can be encoded in a variety of other information objects, such as bar codes, numerals, or patterns of dots." []
+is_a: IAO:0000028 ! symbol
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
+
+[Term]
+id: IAO:0000027
+name: data item
+def: "a data item is an information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements." []
+is_a: IAO:0000030 ! information content entity
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
+
+[Term]
+id: IAO:0000028
+name: symbol
+def: "An information content entity that is a mark(s) or character(s) used as a conventional representation of another entity." []
+is_a: IAO:0000030 ! information content entity
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
+
+[Term]
+id: IAO:0000030
+name: information content entity
+def: "A generically dependent continuant that is about some thing." []
+is_a: BFO:0000031 ! generically dependent continuant
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+
+[Term]
+id: IAO:0000032
+name: scalar measurement datum
+def: "a scalar measurement datum is a measurement datum that is composed of two parts, numerals and a unit label." []
+is_a: IAO:0000109 ! measurement datum
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
+
+[Term]
+id: IAO:0000033
+name: directive information entity
+def: "An information content entity whose concretizations indicate to their bearer how to realize them in a process." []
+is_a: IAO:0000027 ! data item
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
+
+[Term]
+id: IAO:0000064
+name: algorithm
+def: "A plan specification which describes the inputs and output of mathematical functions as well as workflow of execution for achieving an predefined objective. Algorithms are realized usually by means of implementation as computer programs for execution by automata." []
+is_a: IAO:0000104 ! plan specification
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
+
+[Term]
+id: IAO:0000098
+name: data format specification
+def: "A data format specification is the information content borne by the document published defining the specification.\nExample: The ISO document specifying what encompasses an XML document; The instructions in a XSD file" []
+is_a: IAO:0000033 ! directive information entity
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
+
+[Term]
+id: IAO:0000104
+name: plan specification
+def: "A directive information entity with action specifications and objective specifications as parts that, when concretized, is realized in a process in which the bearer tries to achieve the objectives by taking the actions specified." []
+is_a: IAO:0000030 ! information content entity
+is_a: IAO:0000033 ! directive information entity
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+
+[Term]
+id: IAO:0000109
+name: measurement datum
+def: "A measurement datum is an information content entity that is a recording of the output of a measurement such as produced by a device." []
+is_a: IAO:0000027 ! data item
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
+
+[Term]
+id: IAO:0000416
+name: time measurement datum
+def: "A scalar measurement datum that is the result of measuring a temporal interval" []
+is_a: IAO:0000032 ! scalar measurement datum
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
+
+[Term]
+id: IAO:0000577
+name: centrally registered identifier symbol
+def: "A symbol that is part of a CRID and that is sufficient to look up a record from the CRID's registry." []
+is_a: IAO:0000028 ! symbol
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
+
+[Term]
+id: IAO:0000594
+name: software application
+def: "A software application is software that can be directly executed by some processing unit." []
+is_a: IAO:0000010 ! software
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/iao.owl
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+
+[Term]
+id: NCBITaxon:9606
+name: Homo sapiens
+is_a: OBI:0100026 ! organism
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/ncbitaxon.owl
+
+[Term]
+id: NCBITaxon:taxonomic_rank
+name: taxonomic rank
+is_a: IAO:0000109 ! measurement datum
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/ncbitaxon.owl
+
+[Term]
+id: NCIT:C19498
+name: Document
+def: "A physical object, or electronic counterpart, that is characterized by containing writing which is meant to be human-readable." []
+is_a: NCIT:C25198 ! Record
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/ncit.owl
+
+[Term]
+id: NCIT:C20181
+name: Conceptual Entity
+def: "An organizational header for concepts representing mostly abstract entities." []
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/ncit.owl
+
+[Term]
+id: NCIT:C25198
+name: Record
+def: "Anything (e.g., a document) providing permanent evidence of or information about past events." []
+is_a: NCIT:C20181 ! Conceptual Entity
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/ncit.owl
+
+[Term]
+id: NCIT:C25364
+name: Identifier
+def: "One or more characters used to identify, name, or characterize the nature, properties, or contents of a thing." []
+is_a: NCIT:C19498 ! Document
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/ncit.owl
+
+[Term]
+id: NCIT:C25402
+name: Accession Number
+def: "A control number unique to an object.  It is used to identify the object among other objects in a collection." []
+is_a: NCIT:C70663 ! Unique Identifier
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/ncit.owl
+
+[Term]
+id: NCIT:C70663
+name: Unique Identifier
+def: "A set of characters used as a code that is unique in the context or the system for which it is created. It serves as a means of identification and reference (often instead of a name) for an entity, person, thing, function, procedure, activity, variable, or body of data." []
+is_a: NCIT:C25364 ! Identifier
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/ncit.owl
+
+[Term]
+id: OBI:0000011
+name: planned process
+def: "A processual entity that realizes a plan which is the concretization of a plan specification." []
+is_a: BFO:0000015 ! process
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+
+[Term]
+id: OBI:0000018
+name: material supplier role
+def: "a role realized through the process of supplying materials such as animal subjects, reagents or other materials used in an investigation." []
+is_a: OBI:0000947 ! service provider role
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+
+[Term]
+id: OBI:0000025
+name: reference substance role
+def: "a role inhering in a material entity that is realized when  characteristics or responses elicited by the substance are used for comparison or reference." []
+is_a: BFO:0000023 ! role
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+
+[Term]
+id: OBI:0000047
+name: processed material
+def: "Is a material entity that is created or changed during material processing." []
+is_a: BFO:0000040 ! material entity
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+
+[Term]
+id: OBI:0000070
+name: assay
+def: "A planned process with the objective to produce information about the material entity that is the evaluant, by physically examining it or its proxies." []
+is_a: OBI:0000011 ! planned process
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+
+[Term]
+id: OBI:0000091
+name: detector reagent role
+def: "a role which inheres in a molecular entity and is realized by the process of recording or registering a stimulus." []
+is_a: BFO:0000023 ! role
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+
+[Term]
+id: OBI:0000094
+name: material processing
+def: "A planned process which results in physical changes in a specified input material" []
+is_a: OBI:0000011 ! planned process
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+
+[Term]
+id: OBI:0000097
+name: participant under investigation role
+def: "A role that is realized through the execution of a study design in which the bearer of the role participates and in which data about that bearer is collected." []
+is_a: BFO:0000023 ! role
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+
+[Term]
+id: OBI:0000102
+name: responsible party role
+def: "a study personnel role played by a party who is accountable for the execution of a study component and can make decisions about the conduct of the study" []
+is_a: OBI:0000202 ! investigation agent role
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+
+[Term]
+id: OBI:0000103
+name: principal investigator role
+def: "a responsible party role played by a person responsible for the overall conduct of a study" []
+is_a: OBI:0000102 ! responsible party role
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+
+[Term]
+id: OBI:0000116
+name: worker role
+def: "a personnel role played by a party who executes a component of the study plan; this can occur before, during, after or outside the study timeline" []
+is_a: OBI:0000202 ! investigation agent role
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+
+[Term]
+id: OBI:0000181
+name: population
+def: "a population is a collection of individuals from the same taxonomic class living, counted or sampled at a particular site or in a particular area" []
+is_a: BFO:0000040 ! material entity
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+
+[Term]
+id: OBI:0000198
+name: biological replicate role
+def: "a reference participant role realized by equivalent treatment of participants" []
+is_a: OBI:0000220 ! reference subject role
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+
+[Term]
+id: OBI:0000202
+name: investigation agent role
+def: "A role borne by an entity and that is realized in a process that is part of an investigation in which an objective is achieved. These processes include, among others: planning, overseeing, funding, reviewing." []
+is_a: BFO:0000023 ! role
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+
+[Term]
+id: OBI:0000220
+name: reference subject role
+def: "a reference subject  role which inheres in an organism or entity of organismal origin so that the characteristics or responses of the participant playing the reference participant role are used for comparison or reference" []
+is_a: OBI:0000097 ! participant under investigation role
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+
+[Term]
+id: OBI:0000245
+name: organization
+def: "An entity that can bear roles, has members, and has a set of organization rules. Members of organizations are either organizations themselves or individual people. Members can bear specific organization member roles that are determined in the organization rules. The organization rules also determine how decisions are made on behalf of the organization by the organization members." []
+is_a: BFO:0000040 ! material entity
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+
+[Term]
+id: OBI:0000249
+name: technical replicate role
+def: "technical replicate role is realized when two portions from one evaluant are used in replicate runs of an assay" []
+is_a: OBI:0000220 ! reference subject role
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+
+[Term]
+id: OBI:0000272
+name: protocol
+def: "A plan specification which has sufficient level of detail and quantitative information to communicate it between investigation agents, so that different investigation agents will reliably be able to independently reproduce the process." []
+is_a: IAO:0000104 ! plan specification
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+
+[Term]
+id: OBI:0000415
+name: polymerase chain reaction
+def: "PCR is the process in which a DNA polymerase is used to amplify a piece of DNA by in vitro enzymatic replication. As PCR progresses, the DNA thus generated is itself used as a template for replication. This sets in motion a chain reaction in which the DNA template is exponentially amplified." []
+is_a: OBI:0600058 ! enzymatic amplification
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+
+[Term]
+id: OBI:0000626
+name: DNA sequencing
+def: "DNA sequencing is a sequencing process which uses deoxyribonucleic acid as input and results in a the creation of DNA sequence information artifact using a DNA sequencer instrument." []
+is_a: OBI:0600047 ! sequencing assay
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+
+[Term]
+id: OBI:0000659
+name: specimen collection process
+def: "A planned process with the objective of collecting a specimen." []
+is_a: OBI:0000011 ! planned process
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+
+[Term]
+id: OBI:0000711
+name: library preparation
+def: "is a process which results in the creation of a library from fragments of DNA using cloning vectors or oligonucleotides with the role of adaptors." []
+is_a: OBI:0000094 ! material processing
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+
+[Term]
+id: OBI:0000722
+name: paired-end library
+def: "is a collection of short paired tags from the two ends of DNA fragments are extracted and covalently linked as ditag constructs" []
+is_a: OBI:0000047 ! processed material
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+
+[Term]
+id: OBI:0000832
+name: measurement device
+def: "A device in which a measure function inheres." []
+is_a: OBI:0000968 ! device
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+
+[Term]
+id: OBI:0000835
+name: manufacturer
+def: "A person or organization that has a manufacturer role" []
+is_a: BFO:0000040 ! material entity
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+
+[Term]
+id: OBI:0000932
+name: material separation device
+def: "A device with a separation function realized in a planed process" []
+is_a: OBI:0000968 ! device
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+
+[Term]
+id: OBI:0000947
+name: service provider role
+def: "is a role which inheres in a person or organization and is realized in in a planned process which provides access to training, materials or execution of protocols for an organization or person" []
+is_a: BFO:0000023 ! role
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+
+[Term]
+id: OBI:0000968
+name: device
+def: "A material entity that is designed to perform a function in a scientific investigation, but is not a reagent." []
+is_a: OBI:0000047 ! processed material
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+
+[Term]
+id: OBI:0000973
+name: sequence data
+def: "A measurement datum that representing the primary structure of a macromolecule(it's sequence) sometimes associated with an indicator of confidence of that measurement.\n" []
+is_a: IAO:0000109 ! measurement datum
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+
+[Term]
+id: OBI:0001140
+name: spike-in quality control role
+def: "a reference substance role that is borne by a material entity with a known amount which is mixed into the evaluant of assays for quality control or data normalization purposes" []
+is_a: OBI:0000025 ! reference substance role
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+
+[Term]
+id: OBI:0001167
+name: age measurement datum
+def: "A time measurement datum that is the result of measurement of age of an organism" []
+is_a: IAO:0000416 ! time measurement datum
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+
+[Term]
+id: OBI:0001169
+name: age since birth measurement datum
+def: "An age measurement datum that is the result of the measurement of the age of an organism since birth, the process of emergence and separation of offspring from the mother." []
+is_a: OBI:0001167 ! age measurement datum
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+
+[Term]
+id: OBI:0001185
+name: selectively maintained organism
+def: "An organism that is bred to have some uniform behavioral, morphological, physiological, or genetic characteristics with similarly bred organisms" []
+is_a: OBI:0100026 ! organism
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+
+[Term]
+id: OBI:0001271
+name: RNA-seq assay
+def: "An assay in which sequencing technology (e.g. Solexa/454) is used to generate RNA sequence, analyse the transcibed regions of the genome, and or to quantitate transcript abundance" []
+is_a: OBI:0600047 ! sequencing assay
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+
+[Term]
+id: OBI:0001468
+name: cell specimen
+def: "A specimen primarily composed of a cell or cells collected from a multicellular organism or a cell culture." []
+is_a: OBI:0100051 ! specimen
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+
+[Term]
+id: OBI:0001494
+name: linear amplification
+def: "An enzymatic amplification which amplifies nucleic acid sequence by making many copies off the same template." []
+is_a: OBI:0600058 ! enzymatic amplification
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+
+[Term]
+id: OBI:0001616
+name: specimen identifier
+def: "A CRID symbol denotes a specimen and used to distinguish one specimen from another in an investigation." []
+is_a: IAO:0000028 ! symbol
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+
+[Term]
+id: OBI:0001850
+name: transcript analysis by paired-end tag sequencing
+def: "An assay that incorporates Paired-End Tags and sequencing technology to determine transcripts, gene structures, and gene expressions." []
+is_a: OBI:0600047 ! sequencing assay
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+
+[Term]
+id: OBI:0001852
+name: paired-end library preparation
+def: "A library preparation that results in the creation of a library of the 5' and 3' ends of DNA or cDNA fragments using adaptors and endonucleases. The preparation may or may not include cloning process. " []
+is_a: OBI:0000711 ! library preparation
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+
+[Term]
+id: OBI:0001891
+name: sequencing facility organization
+def: "An organization that provides sequence determination service" []
+is_a: OBI:0000245 ! organization
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+
+[Term]
+id: OBI:0001895
+name: specimen collector
+def: "A person who collects the specimen" []
+is_a: NCBITaxon:9606 ! Homo sapiens
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+
+[Term]
+id: OBI:0001933
+name: value specification
+def: "An information content entity that specifies a value within a classification scheme or on a quantitative scale." []
+is_a: IAO:0000030 ! information content entity
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+
+[Term]
+id: OBI:0001959
+name: sequencing library multiplexing
+def: "a planned process which consists in running a set of samples as a pool in one single instrument run of data acquisition process while retaining the ability to associate individual results to each of the individual input samples thanks to the use of a multiplex identifier, introduced during the ligation step of the individual library preparation and specific to a given sample." []
+is_a: OBI:0000094 ! material processing
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+
+[Term]
+id: OBI:0001967
+name: multiplexing sequence identifier
+def: "A multiplexing sequence identifier is a nucleic acid sequence which is used in a ligation step of library preparation process to allow pooling of samples while maintaining ability to identify individual source material and creation of a multiplexed library" []
+is_a: CHEBI:16991 ! deoxyribonucleic acid
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+
+[Term]
+id: OBI:0002127
+name: single cell specimen
+def: "A cell specimen that contains only one cell." []
+is_a: OBI:0001468 ! cell specimen
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+
+[Term]
+id: OBI:0100026
+name: organism
+def: "A material entity that is an individual living system, such as animal, plant, bacteria or virus, that is capable of replicating or reproducing, growth and maintenance in the right environment. An organism may be unicellular or made up, like humans, of many billions of cells divided into specialized tissues and organs." []
+is_a: BFO:0000040 ! material entity
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+
+[Term]
+id: OBI:0100051
+name: specimen
+def: "A material entity that has the specimen role." []
+is_a: BFO:0000040 ! material entity
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+
+[Term]
+id: OBI:0400099
+name: flow cytometer sorter
+def: "A flow_cytometer_sorter is a flow_cytometer that analyzes and separates or sorts particles passing through (based on properties measured during analysis) to collect cells of interest." []
+is_a: OBI:0000932 ! material separation device
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+
+[Term]
+id: OBI:0400103
+name: DNA sequencer
+def: "A DNA sequencer is an instrument that determines the order of deoxynucleotides in deoxyribonucleic acid sequences." []
+is_a: OBI:0000832 ! measurement device
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+
+[Term]
+id: OBI:0600047
+name: sequencing assay
+def: "the use of a chemical or biochemical means to infer the sequence of a biomaterial" []
+is_a: OBI:0000070 ! assay
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+
+[Term]
+id: OBI:0600058
+name: enzymatic amplification
+def: "the use of enzymes to increase the number of molecules of a biomaterial" []
+is_a: OBI:0000094 ! material processing
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+
+[Term]
+id: OBIws:0000015
+name: pairwise sequence alignment algorithm
+def: "An algorithm that attempts to align two molecular sequences (nucleic acid or protein sequences)." []
+is_a: IAO:0000064 ! algorithm
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi/webService.owl
+
+[Term]
+id: OBIws:0000088
+name: BLAST algorithm
+def: "BLAST (Basic Local Alignment Search Tool), a pairwise sequence alignment algorithm is a heuristic search algorithm for comparing primary biological sequence information, such as the amino-acid or nucleotides sequences with a database of sequences, and identify sequences that resemble the query sequence above a certain threshold." []
+is_a: OBIws:0000015 ! pairwise sequence alignment algorithm
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi/webService.owl
+
+[Term]
+id: OBIws:0000106
+name: sequence data format specification
+def: "A data format specification for molecular sequence feature information." []
+is_a: IAO:0000098 ! data format specification
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi/webService.owl
+
+[Term]
+id: OBIws:0000140
+name: BLASTn
+def: "A BLAST algorithm that searches/aligns a nucleotide query sequence against a nucleotide database at a nucleotide level." []
+is_a: OBIws:0000088 ! BLAST algorithm
+
+[Term]
+id: OBIws:0000192
+name: RNA sequence data
+def: "A sequence data that is about the primary structure of RNA." []
+is_a: OBI:0000973 ! sequence data
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi/webService.owl
+
+[Term]
+id: OGMS:0000090
+name: treatment
+def: "A processual entity whose completion is hypothesized (by a healthcare provider) to alleviate the signs and symptoms associated with a disorder" []
+is_a: OBI:0000011 ! planned process
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/ogms.owl
+
+[Term]
+id: OMIABIS:0000100
+name: study principle investigator or responsible
+def: "The principle investigtor or responsible person for a study or a sample collection." []
+is_a: NCBITaxon:9606 ! Homo sapiens
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/omiabis.owl
+
+[Term]
+id: OMIABIS:0001039
+name: date of specimen collection
+def: "A data item that indicates the time when the collection of a specimen occurred." []
+is_a: IAO:0000027 ! data item
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/omiabis.owl
+
+[Term]
+id: SO:0001505
+name: reference_genome
+def: "A collection of sequences (often chromosomes) taken as the standard for a given organism and genome assembly." []
+is_a: EFO:0004420 ! genome
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/so.owl
+
+[Term]
+id: TAXRANK:0000000
+name: taxonomic_rank
+def: "A level of depth of a taxon in a taxonomic hierarchy." []
+is_a: GENEPIO:0001170 ! organism datum
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/taxrank.owl
+
+[Term]
+id: TAXRANK:0000006
+name: species
+is_a: TAXRANK:0000000 ! taxonomic_rank
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/taxrank.owl
+
+[Term]
+id: UBERON:0000465
+name: material anatomical entity
+def: "Anatomical entity that has mass." []
+is_a: BFO:0000040 ! material entity
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uberon.owl
+
