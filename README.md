@@ -3,7 +3,11 @@
 
 # ornaseq
 
-This ontology... YOUR DESCRIPTION HERE
+The Ontology for RNA Sequencing (ORNASEQ) is an application ontology based largely on the [Ontology for Biomedical Investigations (OBI)](<http://obi-ontology.org/>), using the principles of [OBO Foundary](<http://obofoundry.org>).
+
+This ontology is designed to annotate next-generation sequencing experiments performed on RNA.
+
+For additional information please see: http://kim.bio.upenn.edu/software/ornaseq.shtml
 
 ## Versions
 
