@@ -10,8 +10,10 @@ I should probably add the following to the Makefile. For now these steps are man
 
 1. Rebuild OntoFox:
 
-    curl -s -F file=@"imports/terms_input.txt" -o imports/terms_import.owl http://ontofox.hegroup.org/service.php
-    curl -s -F file=@"imports/properties_input.txt" -o imports/properties_import.owl http://ontofox.hegroup.org/service.
+```
+curl -s -F file=@"imports/terms_input.txt" -o imports/terms_import.owl http://ontofox.hegroup.org/service.php
+curl -s -F file=@"imports/properties_input.txt" -o imports/properties_import.owl http://ontofox.hegroup.org/service.
+```
 
 Not sure why NCIT_C25402 is flagged as an error in terms_input.
 
@@ -23,12 +25,16 @@ Not sure why NCIT_C25402 is flagged as an error in terms_input.
 
 3. Generate OntoFox obo files
 
-    robot extract -i imports/terms_import.owl -T imports/terms_list.txt --method BOT -O http://purl.obolibrary.org/obo/ornaseq/dev/terms_import.owl -o imports/terms_import.obo
-    robot extract -i imports/properties_import.owl -T imports/properties_list.txt --method BOT -O http://purl.obolibrary.org/obo/ornaseq/dev/properties_import.owl -o imports/properties_import.obo
+```
+robot extract -i imports/terms_import.owl -T imports/terms_list.txt --method BOT -O http://purl.obolibrary.org/obo/ornaseq/dev/terms_import.owl -o imports/terms_import.obo
+robot extract -i imports/properties_import.owl -T imports/properties_list.txt --method BOT -O http://purl.obolibrary.org/obo/ornaseq/dev/properties_import.owl -o imports/properties_import.obo
+```
 
 4. Prepare release
 
-    make prepare_release
+```
+make prepare_release
+```
 
 ## Editors Version
 
