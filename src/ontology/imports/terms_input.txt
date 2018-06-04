@@ -17,6 +17,10 @@ subClassOf http://purl.obolibrary.org/obo/GENEPIO_0001170
 [Source annotation URIs]
 http://www.w3.org/2000/01/rdf-schema#label
 http://purl.obolibrary.org/obo/IAO_0000115
+http://purl.obolibrary.org/obo/IAO_0000116
+http://purl.obolibrary.org/obo/IAO_0000117
+http://purl.obolibrary.org/obo/IAO_0000118
+http://purl.obolibrary.org/obo/IAO_0000119
 
 
 
@@ -33,6 +37,10 @@ subClassOf http://www.ebi.ac.uk/efo/EFO_0004420
 [Source annotation URIs]
 http://www.w3.org/2000/01/rdf-schema#label
 http://purl.obolibrary.org/obo/IAO_0000115
+http://purl.obolibrary.org/obo/IAO_0000116
+http://purl.obolibrary.org/obo/IAO_0000117
+http://purl.obolibrary.org/obo/IAO_0000118
+http://purl.obolibrary.org/obo/IAO_0000119
 
 
 
@@ -52,6 +60,10 @@ includeNoIntermediates
 [Source annotation URIs]
 http://www.w3.org/2000/01/rdf-schema#label
 http://purl.obolibrary.org/obo/IAO_0000115
+http://purl.obolibrary.org/obo/IAO_0000116
+http://purl.obolibrary.org/obo/IAO_0000117
+http://purl.obolibrary.org/obo/IAO_0000118
+http://purl.obolibrary.org/obo/IAO_0000119
 
 
 
@@ -93,6 +105,10 @@ subClassOf http://purl.obolibrary.org/obo/BFO_0000002
 [Source annotation URIs]
 http://www.w3.org/2000/01/rdf-schema#label
 http://purl.obolibrary.org/obo/IAO_0000115
+http://purl.obolibrary.org/obo/IAO_0000116
+http://purl.obolibrary.org/obo/IAO_0000117
+http://purl.obolibrary.org/obo/IAO_0000118
+http://purl.obolibrary.org/obo/IAO_0000119
 
 
 
@@ -112,6 +128,10 @@ subClassOf http://purl.obolibrary.org/obo/BFO_0000040
 [Source annotation URIs]
 http://www.w3.org/2000/01/rdf-schema#label
 http://purl.obolibrary.org/obo/IAO_0000115
+http://purl.obolibrary.org/obo/IAO_0000116
+http://purl.obolibrary.org/obo/IAO_0000117
+http://purl.obolibrary.org/obo/IAO_0000118
+http://purl.obolibrary.org/obo/IAO_0000119
 
 
 
@@ -143,6 +163,10 @@ subClassOf http://purl.obolibrary.org/obo/CL_0000000
 [Source annotation URIs]
 http://www.w3.org/2000/01/rdf-schema#label
 http://purl.obolibrary.org/obo/IAO_0000115
+http://purl.obolibrary.org/obo/IAO_0000116
+http://purl.obolibrary.org/obo/IAO_0000117
+http://purl.obolibrary.org/obo/IAO_0000118
+http://purl.obolibrary.org/obo/IAO_0000119
 
 
 
@@ -174,6 +198,10 @@ subClassOf http://purl.obolibrary.org/obo/BFO_0000040
 [Source annotation URIs]
 http://www.w3.org/2000/01/rdf-schema#label
 http://purl.obolibrary.org/obo/IAO_0000115
+http://purl.obolibrary.org/obo/IAO_0000116
+http://purl.obolibrary.org/obo/IAO_0000117
+http://purl.obolibrary.org/obo/IAO_0000118
+http://purl.obolibrary.org/obo/IAO_0000119
 
 
 
@@ -199,6 +227,10 @@ subClassOf http://purl.obolibrary.org/obo/IAO_0000109
 [Source annotation URIs]
 http://www.w3.org/2000/01/rdf-schema#label
 http://purl.obolibrary.org/obo/IAO_0000115
+http://purl.obolibrary.org/obo/IAO_0000116
+http://purl.obolibrary.org/obo/IAO_0000117
+http://purl.obolibrary.org/obo/IAO_0000118
+http://purl.obolibrary.org/obo/IAO_0000119
 
 
 
@@ -227,6 +259,10 @@ subClassOf http://purl.obolibrary.org/obo/GO_0044464
 [Source annotation URIs]
 http://www.w3.org/2000/01/rdf-schema#label
 http://purl.obolibrary.org/obo/IAO_0000115
+http://purl.obolibrary.org/obo/IAO_0000116
+http://purl.obolibrary.org/obo/IAO_0000117
+http://purl.obolibrary.org/obo/IAO_0000118
+http://purl.obolibrary.org/obo/IAO_0000119
 
 
 
@@ -282,6 +318,10 @@ subClassOf http://purl.obolibrary.org/obo/IAO_0000010
 [Source annotation URIs]
 http://www.w3.org/2000/01/rdf-schema#label
 http://purl.obolibrary.org/obo/IAO_0000115
+http://purl.obolibrary.org/obo/IAO_0000116
+http://purl.obolibrary.org/obo/IAO_0000117
+http://purl.obolibrary.org/obo/IAO_0000118
+http://purl.obolibrary.org/obo/IAO_0000119
 
 
 
@@ -301,6 +341,10 @@ subClassOf http://purl.obolibrary.org/obo/IAO_0000109
 [Source annotation URIs]
 http://www.w3.org/2000/01/rdf-schema#label
 http://purl.obolibrary.org/obo/IAO_0000115
+http://purl.obolibrary.org/obo/IAO_0000116
+http://purl.obolibrary.org/obo/IAO_0000117
+http://purl.obolibrary.org/obo/IAO_0000118
+http://purl.obolibrary.org/obo/IAO_0000119
 
 
 
@@ -330,6 +374,10 @@ subClassOf http://purl.obolibrary.org/obo/NCIT_C25364
 [Source annotation URIs]
 http://www.w3.org/2000/01/rdf-schema#label
 http://purl.obolibrary.org/obo/IAO_0000115
+http://purl.obolibrary.org/obo/IAO_0000116
+http://purl.obolibrary.org/obo/IAO_0000117
+http://purl.obolibrary.org/obo/IAO_0000118
+http://purl.obolibrary.org/obo/IAO_0000119
 
 
 
@@ -358,6 +406,10 @@ subClassOf http://purl.obolibrary.org/obo/IAO_0000098
 [Source annotation URIs]
 http://www.w3.org/2000/01/rdf-schema#label
 http://purl.obolibrary.org/obo/IAO_0000115
+http://purl.obolibrary.org/obo/IAO_0000116
+http://purl.obolibrary.org/obo/IAO_0000117
+http://purl.obolibrary.org/obo/IAO_0000118
+http://purl.obolibrary.org/obo/IAO_0000119
 
 
 
@@ -374,6 +426,10 @@ subClassOf http://purl.obolibrary.org/obo/OBI_0000011
 [Source annotation URIs]
 http://www.w3.org/2000/01/rdf-schema#label
 http://purl.obolibrary.org/obo/IAO_0000115
+http://purl.obolibrary.org/obo/IAO_0000116
+http://purl.obolibrary.org/obo/IAO_0000117
+http://purl.obolibrary.org/obo/IAO_0000118
+http://purl.obolibrary.org/obo/IAO_0000119
 
 
 
@@ -393,6 +449,10 @@ subClassOf http://purl.obolibrary.org/obo/NCBITaxon_9606
 [Source annotation URIs]
 http://www.w3.org/2000/01/rdf-schema#label
 http://purl.obolibrary.org/obo/IAO_0000115
+http://purl.obolibrary.org/obo/IAO_0000116
+http://purl.obolibrary.org/obo/IAO_0000117
+http://purl.obolibrary.org/obo/IAO_0000118
+http://purl.obolibrary.org/obo/IAO_0000119
 
 
 
@@ -645,6 +705,10 @@ subClassOf http://purl.obolibrary.org/obo/OBI_0002466
 [Source annotation URIs]
 http://www.w3.org/2000/01/rdf-schema#label
 http://purl.obolibrary.org/obo/IAO_0000115
+http://purl.obolibrary.org/obo/IAO_0000116
+http://purl.obolibrary.org/obo/IAO_0000117
+http://purl.obolibrary.org/obo/IAO_0000118
+http://purl.obolibrary.org/obo/IAO_0000119
 
 
 

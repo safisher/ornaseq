@@ -21,8 +21,6 @@
 
     <!-- CLASSES -->
 
-    <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
-
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ORNASEQ_0000001">
         <rdfs:label xml:lang="en">date of specimen amplification</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0002471"/>

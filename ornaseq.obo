@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: releases/2018-05-29
+data-version: releases/2018-06-04
 remark: The following ontology is provided by Stephen A Fisher and Junhyong Kim to annotate next-generation sequencing experiments performed on RNA.
 import: http://purl.obolibrary.org/obo/ornaseq/properties_import.owl
 import: http://purl.obolibrary.org/obo/ornaseq/terms_import.owl
@@ -8,13 +8,573 @@ property_value: http://purl.org/dc/elements/1.1/contributor "Junhyong Kim" xsd:s
 property_value: http://purl.org/dc/elements/1.1/contributor "Stephen A Fisher" xsd:string
 property_value: http://purl.org/dc/elements/1.1/license http://creativecommons.org/licenses/by/4.0/
 property_value: http://purl.org/dc/elements/1.1/title "Ontology for RNA sequencing (ORNASEQ)" xsd:string
-owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\nDeclaration(Class(<http://purl.obolibrary.org/obo/BFO_0000040>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/CHEBI_23367>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/GENEPIO_0000081>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/GENEPIO_0000085>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/IAO_0000027>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/IAO_0000028>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/IAO_0000594>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0000091>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0000094>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0000272>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0002467>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/OBI_0002471>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/UBERON_0000465>))\n############################\n#   Classes\n############################\n\n# Class: <http://purl.obolibrary.org/obo/BFO_0000040> (<http://purl.obolibrary.org/obo/BFO_0000040>)\n\nSubClassOf(<http://purl.obolibrary.org/obo/BFO_0000040> owl:Thing)\n\n# Class: <http://purl.obolibrary.org/obo/CHEBI_23367> (<http://purl.obolibrary.org/obo/CHEBI_23367>)\n\nSubClassOf(<http://purl.obolibrary.org/obo/CHEBI_23367> owl:Thing)\n\n# Class: <http://purl.obolibrary.org/obo/GENEPIO_0000081> (<http://purl.obolibrary.org/obo/GENEPIO_0000081>)\n\nSubClassOf(<http://purl.obolibrary.org/obo/GENEPIO_0000081> owl:Thing)\n\n# Class: <http://purl.obolibrary.org/obo/GENEPIO_0000085> (<http://purl.obolibrary.org/obo/GENEPIO_0000085>)\n\nSubClassOf(<http://purl.obolibrary.org/obo/GENEPIO_0000085> owl:Thing)\n\n# Class: <http://purl.obolibrary.org/obo/IAO_0000027> (<http://purl.obolibrary.org/obo/IAO_0000027>)\n\nSubClassOf(<http://purl.obolibrary.org/obo/IAO_0000027> owl:Thing)\n\n# Class: <http://purl.obolibrary.org/obo/IAO_0000028> (<http://purl.obolibrary.org/obo/IAO_0000028>)\n\nSubClassOf(<http://purl.obolibrary.org/obo/IAO_0000028> owl:Thing)\n\n# Class: <http://purl.obolibrary.org/obo/IAO_0000594> (<http://purl.obolibrary.org/obo/IAO_0000594>)\n\nSubClassOf(<http://purl.obolibrary.org/obo/IAO_0000594> owl:Thing)\n\n# Class: <http://purl.obolibrary.org/obo/OBI_0000091> (<http://purl.obolibrary.org/obo/OBI_0000091>)\n\nSubClassOf(<http://purl.obolibrary.org/obo/OBI_0000091> owl:Thing)\n\n# Class: <http://purl.obolibrary.org/obo/OBI_0000094> (<http://purl.obolibrary.org/obo/OBI_0000094>)\n\nSubClassOf(<http://purl.obolibrary.org/obo/OBI_0000094> owl:Thing)\n\n# Class: <http://purl.obolibrary.org/obo/OBI_0000272> (<http://purl.obolibrary.org/obo/OBI_0000272>)\n\nSubClassOf(<http://purl.obolibrary.org/obo/OBI_0000272> owl:Thing)\n\n# Class: <http://purl.obolibrary.org/obo/OBI_0002467> (<http://purl.obolibrary.org/obo/OBI_0002467>)\n\nSubClassOf(<http://purl.obolibrary.org/obo/OBI_0002467> owl:Thing)\n\n# Class: <http://purl.obolibrary.org/obo/OBI_0002471> (<http://purl.obolibrary.org/obo/OBI_0002471>)\n\nSubClassOf(<http://purl.obolibrary.org/obo/OBI_0002471> owl:Thing)\n\n# Class: <http://purl.obolibrary.org/obo/UBERON_0000465> (<http://purl.obolibrary.org/obo/UBERON_0000465>)\n\nSubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000465> owl:Thing)\n\n\n)
+owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\nDeclaration(Class(<http://purl.obolibrary.org/obo/BFO_0000001>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/NCIT_C20181>))\n############################\n#   Classes\n############################\n\n# Class: <http://purl.obolibrary.org/obo/BFO_0000001> (entity)\n\nSubClassOf(<http://purl.obolibrary.org/obo/BFO_0000001> owl:Thing)\n\n# Class: <http://purl.obolibrary.org/obo/NCIT_C20181> (Conceptual Entity)\n\nSubClassOf(<http://purl.obolibrary.org/obo/NCIT_C20181> owl:Thing)\n\n\n)
+
+[Term]
+id: BFO:0000002 ! continuant
+is_a: BFO:0000001 ! entity
+
+[Term]
+id: BFO:0000003 ! occurrent
+is_a: BFO:0000001 ! entity
+
+[Term]
+id: BFO:0000004 ! independent continuant
+is_a: BFO:0000002 ! continuant
+
+[Term]
+id: BFO:0000015 ! process
+is_a: BFO:0000003 ! occurrent
+
+[Term]
+id: BFO:0000017 ! realizable entity
+is_a: BFO:0000020 ! specifically dependent continuant
+
+[Term]
+id: BFO:0000020 ! specifically dependent continuant
+is_a: BFO:0000002 ! continuant
+
+[Term]
+id: BFO:0000023 ! role
+is_a: BFO:0000017 ! realizable entity
+
+[Term]
+id: BFO:0000031 ! generically dependent continuant
+is_a: BFO:0000002 ! continuant
+
+[Term]
+id: BFO:0000040 ! material entity
+is_a: BFO:0000004 ! independent continuant
+
+[Term]
+id: CHEBI:16991 ! deoxyribonucleic acid
+is_a: CHEBI:23367 ! molecular entity
+
+[Term]
+id: CHEBI:23367 ! molecular entity
+is_a: BFO:0000040 ! material entity
+
+[Term]
+id: CL:0000000 ! cell
+is_a: BFO:0000040 ! material entity
+
+[Term]
+id: CL:0000127 ! astrocyte
+is_a: CL:0000000 ! cell
+
+[Term]
+id: CL:0000449 ! brown fat cell
+is_a: CL:0000000 ! cell
+
+[Term]
+id: CL:0000540 ! neuron
+is_a: CL:0000000 ! cell
+
+[Term]
+id: CL:0000746 ! cardiac muscle cell
+is_a: CL:0000000 ! cell
+
+[Term]
+id: CL:2000029 ! central nervous system neuron
+is_a: CL:0000540 ! neuron
+
+[Term]
+id: EFO:0000683
+is_a: BFO:0000023 ! role
+
+[Term]
+id: EFO:0004155
+is_a: IAO:0000098 ! data format specification
+
+[Term]
+id: EFO:0004157
+is_a: IAO:0000098 ! data format specification
+
+[Term]
+id: EFO:0004420
+is_a: BFO:0000040 ! material entity
+
+[Term]
+id: EFO:0004421
+is_a: BFO:0000040 ! material entity
+
+[Term]
+id: EFO:0005630
+is_a: IAO:0000098 ! data format specification
+
+[Term]
+id: GENEPIO:0000069 ! sequencing run date
+is_a: IAO:0000027 ! data item
+
+[Term]
+id: GENEPIO:0000081 ! sequencing kit
+is_a: OBI:0000047 ! processed material
+
+[Term]
+id: GENEPIO:0000085 ! library preparation kit
+is_a: OBI:0000047 ! processed material
+
+[Term]
+id: GENEPIO:0001170 ! organism datum
+is_a: IAO:0000109 ! measurement datum
+
+[Term]
+id: GO:0005575 ! cellular_component
+is_a: BFO:0000040 ! material entity
+
+[Term]
+id: GO:0005739 ! mitochondrion
+is_a: GO:0044464 ! cell part
+
+[Term]
+id: GO:0030425 ! dendrite
+is_a: GO:0044464 ! cell part
+
+[Term]
+id: GO:0044297 ! cell body
+is_a: GO:0044464 ! cell part
+
+[Term]
+id: GO:0044464 ! cell part
+is_a: GO:0005575 ! cellular_component
+
+[Term]
+id: IAO:0000010 ! software
+is_a: IAO:0000104 ! plan specification
+
+[Term]
+id: IAO:0000017 ! model number
+is_a: IAO:0000028 ! symbol
+
+[Term]
+id: IAO:0000027 ! data item
+is_a: IAO:0000030 ! information content entity
+
+[Term]
+id: IAO:0000028 ! symbol
+is_a: IAO:0000030 ! information content entity
+
+[Term]
+id: IAO:0000030 ! information content entity
+is_a: BFO:0000031 ! generically dependent continuant
+
+[Term]
+id: IAO:0000032 ! scalar measurement datum
+is_a: IAO:0000109 ! measurement datum
+
+[Term]
+id: IAO:0000033 ! directive information entity
+is_a: IAO:0000027 ! data item
+
+[Term]
+id: IAO:0000064 ! algorithm
+is_a: IAO:0000104 ! plan specification
+
+[Term]
+id: IAO:0000098 ! data format specification
+is_a: IAO:0000033 ! directive information entity
+
+[Term]
+id: IAO:0000104 ! plan specification
+is_a: IAO:0000033 ! directive information entity
+
+[Term]
+id: IAO:0000109 ! measurement datum
+is_a: IAO:0000027 ! data item
+
+[Term]
+id: IAO:0000416 ! time measurement datum
+is_a: IAO:0000032 ! scalar measurement datum
+
+[Term]
+id: IAO:0000577 ! centrally registered identifier symbol
+is_a: IAO:0000028 ! symbol
+
+[Term]
+id: IAO:0000594 ! software application
+is_a: IAO:0000010 ! software
+
+[Term]
+id: NCBITaxon:9606 ! Homo sapiens
+is_a: OBI:0100026 ! organism
+
+[Term]
+id: NCBITaxon:taxonomic_rank ! taxonomic rank
+is_a: IAO:0000109 ! measurement datum
+
+[Term]
+id: NCIT:C19498 ! Document
+is_a: NCIT:C25198 ! Record
+
+[Term]
+id: NCIT:C25198 ! Record
+is_a: NCIT:C20181 ! Conceptual Entity
+
+[Term]
+id: NCIT:C25364 ! Identifier
+is_a: NCIT:C19498 ! Document
+
+[Term]
+id: NCIT:C25402 ! Accession Number
+is_a: NCIT:C70663 ! Unique Identifier
+
+[Term]
+id: NCIT:C70663 ! Unique Identifier
+is_a: NCIT:C25364 ! Identifier
+
+[Term]
+id: OBI:0000011 ! planned process
+is_a: BFO:0000015 ! process
+
+[Term]
+id: OBI:0000018 ! material supplier role
+is_a: OBI:0000947 ! service provider role
+
+[Term]
+id: OBI:0000025 ! reference substance role
+is_a: BFO:0000023 ! role
+
+[Term]
+id: OBI:0000047 ! processed material
+is_a: BFO:0000040 ! material entity
+
+[Term]
+id: OBI:0000070 ! assay
+is_a: OBI:0000011 ! planned process
+
+[Term]
+id: OBI:0000091 ! detector reagent role
+is_a: BFO:0000023 ! role
+
+[Term]
+id: OBI:0000094 ! material processing
+is_a: OBI:0000011 ! planned process
+
+[Term]
+id: OBI:0000097 ! participant under investigation role
+is_a: BFO:0000023 ! role
+
+[Term]
+id: OBI:0000102 ! responsible party role
+is_a: OBI:0000202 ! investigation agent role
+
+[Term]
+id: OBI:0000103 ! principal investigator role
+is_a: OBI:0000102 ! responsible party role
+
+[Term]
+id: OBI:0000116 ! worker role
+is_a: OBI:0000202 ! investigation agent role
+
+[Term]
+id: OBI:0000181 ! population
+is_a: BFO:0000040 ! material entity
+
+[Term]
+id: OBI:0000198 ! biological replicate role
+is_a: OBI:0000220 ! reference subject role
+
+[Term]
+id: OBI:0000202 ! investigation agent role
+is_a: BFO:0000023 ! role
+
+[Term]
+id: OBI:0000220 ! reference subject role
+is_a: OBI:0000097 ! participant under investigation role
+
+[Term]
+id: OBI:0000245 ! organization
+is_a: BFO:0000040 ! material entity
+
+[Term]
+id: OBI:0000249 ! technical replicate role
+is_a: OBI:0000220 ! reference subject role
+
+[Term]
+id: OBI:0000272 ! protocol
+is_a: IAO:0000104 ! plan specification
+
+[Term]
+id: OBI:0000415 ! polymerase chain reaction
+is_a: OBI:0600058 ! enzymatic amplification
+
+[Term]
+id: OBI:0000626 ! DNA sequencing
+is_a: OBI:0600047 ! sequencing assay
+
+[Term]
+id: OBI:0000659 ! specimen collection process
+is_a: OBI:0000011 ! planned process
+
+[Term]
+id: OBI:0000711 ! library preparation
+is_a: OBI:0000094 ! material processing
+
+[Term]
+id: OBI:0000722 ! paired-end library
+is_a: OBI:0000047 ! processed material
+
+[Term]
+id: OBI:0000832 ! measurement device
+is_a: OBI:0000968 ! device
+
+[Term]
+id: OBI:0000835 ! manufacturer
+is_a: BFO:0000040 ! material entity
+
+[Term]
+id: OBI:0000932 ! material separation device
+is_a: OBI:0000968 ! device
+
+[Term]
+id: OBI:0000947 ! service provider role
+is_a: BFO:0000023 ! role
+
+[Term]
+id: OBI:0000968 ! device
+is_a: OBI:0000047 ! processed material
+
+[Term]
+id: OBI:0000973 ! sequence data
+is_a: IAO:0000109 ! measurement datum
+
+[Term]
+id: OBI:0001140 ! spike-in quality control role
+is_a: OBI:0000025 ! reference substance role
+
+[Term]
+id: OBI:0001167 ! age measurement datum
+is_a: IAO:0000416 ! time measurement datum
+
+[Term]
+id: OBI:0001169 ! age since birth measurement datum
+is_a: OBI:0001167 ! age measurement datum
+
+[Term]
+id: OBI:0001185 ! selectively maintained organism
+is_a: OBI:0100026 ! organism
+
+[Term]
+id: OBI:0001271 ! RNA-seq assay
+is_a: OBI:0600047 ! sequencing assay
+
+[Term]
+id: OBI:0001468 ! cell specimen
+is_a: OBI:0100051 ! specimen
+
+[Term]
+id: OBI:0001494 ! linear amplification
+is_a: OBI:0600058 ! enzymatic amplification
+
+[Term]
+id: OBI:0001616 ! specimen identifier
+is_a: IAO:0000028 ! symbol
+
+[Term]
+id: OBI:0001850 ! transcript analysis by paired-end tag sequencing
+is_a: OBI:0600047 ! sequencing assay
+
+[Term]
+id: OBI:0001852 ! paired-end library preparation
+is_a: OBI:0000711 ! library preparation
+
+[Term]
+id: OBI:0001891 ! sequencing facility organization
+is_a: OBI:0000245 ! organization
+
+[Term]
+id: OBI:0001895 ! specimen collector
+is_a: NCBITaxon:9606 ! Homo sapiens
+
+[Term]
+id: OBI:0001933 ! value specification
+is_a: IAO:0000030 ! information content entity
+
+[Term]
+id: OBI:0001959 ! sequencing library multiplexing
+is_a: OBI:0000094 ! material processing
+
+[Term]
+id: OBI:0001967 ! multiplexing sequence identifier
+is_a: CHEBI:16991 ! deoxyribonucleic acid
+
+[Term]
+id: OBI:0002127 ! single cell specimen
+is_a: OBI:0001468 ! cell specimen
+
+[Term]
+id: OBI:0002461 ! BCL format
+is_a: IAO:0000098 ! data format specification
+
+[Term]
+id: OBI:0002462 ! ERCC RNA spike-in
+is_a: OBI:0000047 ! processed material
+
+[Term]
+id: OBI:0002463 ! SIRV RNA spike-in
+is_a: OBI:0000047 ! processed material
+
+[Term]
+id: OBI:0002464 ! SRS identifier
+is_a: NCIT:C25402 ! Accession Number
+
+[Term]
+id: OBI:0002465 ! age since culture seeding measurement datum
+is_a: OBI:0001167 ! age measurement datum
+
+[Term]
+id: OBI:0002466 ! alignment counting algorithm
+is_a: IAO:0000064 ! algorithm
+
+[Term]
+id: OBI:0002467 ! alignment counting application
+is_a: IAO:0000594 ! software application
+
+[Term]
+id: OBI:0002468 ! base calling algorithm
+is_a: IAO:0000064 ! algorithm
+
+[Term]
+id: OBI:0002469 ! base calling application
+is_a: IAO:0000594 ! software application
+
+[Term]
+id: OBI:0002470 ! bcl2fastq software application
+is_a: OBI:0002469 ! base calling application
+
+[Term]
+id: OBI:0002471 ! date process started
+is_a: IAO:0000027 ! data item
+
+[Term]
+id: OBI:0002472 ! dbGaP study identifier
+is_a: IAO:0000577 ! centrally registered identifier symbol
+
+[Term]
+id: OBI:0002473 ! material amplification role
+is_a: OBI:0000116 ! worker role
+
+[Term]
+id: OBI:0002474 ! material sequencing library preparation role
+is_a: OBI:0000116 ! worker role
+
+[Term]
+id: OBI:0002475 ! number of PCR cycles during library construction
+is_a: IAO:0000027 ! data item
+
+[Term]
+id: OBI:0002476 ! number of rounds of amplification
+is_a: IAO:0000027 ! data item
+
+[Term]
+id: OBI:0002477 ! reference genome role
+is_a: OBI:0000025 ! reference substance role
+
+[Term]
+id: OBI:0002478 ! reference genome-transcriptome alignment algorithm
+is_a: IAO:0000064 ! algorithm
+
+[Term]
+id: OBI:0002479 ! sequence read length measurement datum
+is_a: IAO:0000109 ! measurement datum
+
+[Term]
+id: OBI:0002480 ! sequencing library input quantity measurement datum
+is_a: IAO:0000032 ! scalar measurement datum
+
+[Term]
+id: OBI:0002481 ! single-end library
+is_a: OBI:0000047 ! processed material
+
+[Term]
+id: OBI:0002482 ! specimen harvest quantity
+is_a: IAO:0000032 ! scalar measurement datum
+
+[Term]
+id: OBI:0002483 ! spike-in dilution factor
+is_a: IAO:0000027 ! data item
+
+[Term]
+id: OBI:0002484 ! star algorithm
+is_a: OBI:0002478 ! reference genome-transcriptome alignment algorithm
+
+[Term]
+id: OBI:0002485 ! transcript analysis by single-end sequencing
+is_a: OBI:0600047 ! sequencing assay
+
+[Term]
+id: OBI:0002486 ! verse algorithm
+is_a: OBI:0002466 ! alignment counting algorithm
+
+[Term]
+id: OBI:0002487 ! microraft
+is_a: OBI:0000932 ! material separation device
+
+[Term]
+id: OBI:0002488 ! pipette
+is_a: OBI:0000968 ! device
+
+[Term]
+id: OBI:0100026 ! organism
+is_a: BFO:0000040 ! material entity
+
+[Term]
+id: OBI:0100051 ! specimen
+is_a: BFO:0000040 ! material entity
+
+[Term]
+id: OBI:0400099 ! flow cytometer sorter
+is_a: OBI:0000932 ! material separation device
+
+[Term]
+id: OBI:0400103 ! DNA sequencer
+is_a: OBI:0000832 ! measurement device
+
+[Term]
+id: OBI:0600047 ! sequencing assay
+is_a: OBI:0000070 ! assay
+
+[Term]
+id: OBI:0600058 ! enzymatic amplification
+is_a: OBI:0000094 ! material processing
+
+[Term]
+id: OBIws:0000015 ! pairwise sequence alignment algorithm
+is_a: IAO:0000064 ! algorithm
+
+[Term]
+id: OBIws:0000088 ! BLAST algorithm
+is_a: OBIws:0000015 ! pairwise sequence alignment algorithm
+
+[Term]
+id: OBIws:0000106 ! sequence data format specification
+is_a: IAO:0000098 ! data format specification
+
+[Term]
+id: OBIws:0000140 ! BLASTn
+is_a: OBIws:0000088 ! BLAST algorithm
+
+[Term]
+id: OBIws:0000192 ! RNA sequence data
+is_a: OBI:0000973 ! sequence data
+
+[Term]
+id: OGMS:0000090 ! treatment
+is_a: OBI:0000011 ! planned process
+
+[Term]
+id: OMIABIS:0000100 ! study principle investigator or responsible
+is_a: NCBITaxon:9606 ! Homo sapiens
+
+[Term]
+id: OMIABIS:0001039 ! date of specimen collection
+is_a: IAO:0000027 ! data item
 
 [Term]
 id: ORNASEQ:0000001
 name: date of specimen amplification
-is_a: OBI:0002471
-relationship: RO:0002223 ORNASEQ:0000003 ! enzymatic amplification protocol
+is_a: OBI:0002471 ! date process started
+relationship: RO:0002223 ORNASEQ:0000003 ! starts enzymatic amplification protocol
 property_value: definition "A date process started item that indicates when a specimen was run through the amplification protocol prior to library preparation and sequencing." xsd:string
 property_value: IAO:0000117 "PERSON: Junhyong Kim" xsd:string
 property_value: IAO:0000117 "PERSON: Stephen A. Fisher" xsd:string
@@ -23,8 +583,8 @@ property_value: IAO:0000118 "amplified date" xsd:string
 [Term]
 id: ORNASEQ:0000002
 name: date of specimen library preparation
-is_a: OBI:0002471
-relationship: RO:0002223 ORNASEQ:0000007 ! library preparation protocol
+is_a: OBI:0002471 ! date process started
+relationship: RO:0002223 ORNASEQ:0000007 ! starts library preparation protocol
 property_value: definition "A date process started item that indicates when a specimen was run through the library preparation protocol prior to sequencing." xsd:string
 property_value: IAO:0000117 "PERSON: Junhyong Kim" xsd:string
 property_value: IAO:0000117 "PERSON: Stephen A. Fisher" xsd:string
@@ -33,7 +593,7 @@ property_value: IAO:0000118 "library preparation date" xsd:string
 [Term]
 id: ORNASEQ:0000003
 name: enzymatic amplification protocol
-is_a: OBI:0000272
+is_a: OBI:0000272 ! protocol
 property_value: definition "A protocol document that contains detailed instructions on how to perform an enzymatic amplification planned process." xsd:string
 property_value: IAO:0000117 "PERSON: Junhyong Kim" xsd:string
 property_value: IAO:0000117 "PERSON: Stephen A. Fisher" xsd:string
@@ -42,7 +602,7 @@ property_value: IAO:0000118 "amplification protocol" xsd:string
 [Term]
 id: ORNASEQ:0000004
 name: experiment name
-is_a: IAO:0000028
+is_a: IAO:0000028 ! symbol
 property_value: definition "The name for identifying an experiment." xsd:string
 property_value: IAO:0000116 "Exists in MS (Mass spectrometry ontology) with parent \"quantification object attribute\"" xsd:string
 property_value: IAO:0000117 "PERSON: Junhyong Kim" xsd:string
@@ -51,8 +611,8 @@ property_value: IAO:0000117 "PERSON: Stephen A. Fisher" xsd:string
 [Term]
 id: ORNASEQ:0000005
 name: Illumina TruSeq Rapid SBS Kit v2
-is_a: GENEPIO:0000081
-relationship: OBI:0000312 OBI:0000094
+is_a: GENEPIO:0000081 ! sequencing kit
+relationship: OBI:0000312 OBI:0000094 ! is_specified_output_of material processing
 property_value: definition "A processed material that is a sequencing kit used with Illumina HiSeq 2500 and 1500 sequencers allowing for single-end or paired-end sequencing." xsd:string
 property_value: IAO:0000117 "PERSON: Junhyong Kim" xsd:string
 property_value: IAO:0000117 "PERSON: Stephen A. Fisher" xsd:string
@@ -61,8 +621,8 @@ property_value: IAO:0000119 https://www.illumina.com/products/by-type/sequencing
 [Term]
 id: ORNASEQ:0000006
 name: Illumina TruSeq Stranded
-is_a: GENEPIO:0000085
-relationship: OBI:0000312 OBI:0000094
+is_a: GENEPIO:0000085 ! library preparation kit
+relationship: OBI:0000312 OBI:0000094 ! is_specified_output_of material processing
 property_value: definition "A processed material that is used to create a sequencing library that retains mRNA strand orientation." xsd:string
 property_value: IAO:0000117 "PERSON: Junhyong Kim" xsd:string
 property_value: IAO:0000117 "PERSON: Stephen A. Fisher" xsd:string
@@ -71,7 +631,7 @@ property_value: IAO:0000119 https://www.illumina.com/products/by-type/sequencing
 [Term]
 id: ORNASEQ:0000007
 name: library preparation protocol
-is_a: OBI:0000272
+is_a: OBI:0000272 ! protocol
 property_value: definition "A protocol document that contains detailed instructions on how to perform a library preparation planned process." xsd:string
 property_value: IAO:0000117 "PERSON: Junhyong Kim" xsd:string
 property_value: IAO:0000117 "PERSON: Stephen A. Fisher" xsd:string
@@ -79,7 +639,7 @@ property_value: IAO:0000117 "PERSON: Stephen A. Fisher" xsd:string
 [Term]
 id: ORNASEQ:0000008
 name: number of flow cell lanes
-is_a: IAO:0000027
+is_a: IAO:0000027 ! data item
 property_value: definition "A data item that indicates the number of lanes in a flow cell that were used to sequence a specimen" xsd:string
 property_value: IAO:0000117 "PERSON: Junhyong Kim" xsd:string
 property_value: IAO:0000117 "PERSON: Stephen A. Fisher" xsd:string
@@ -88,7 +648,7 @@ property_value: IAO:0000119 http://scap-t.org/?q=content/sample-attributes-data-
 [Term]
 id: ORNASEQ:0000009
 name: number of flow cells
-is_a: IAO:0000027
+is_a: IAO:0000027 ! data item
 property_value: definition "A data item that indicates the number of flow cells used to sequence a specimen." xsd:string
 property_value: IAO:0000117 "PERSON: Junhyong Kim" xsd:string
 property_value: IAO:0000117 "PERSON: Stephen A. Fisher" xsd:string
@@ -97,7 +657,7 @@ property_value: IAO:0000119 http://scap-t.org/?q=content/sample-attributes-data-
 [Term]
 id: ORNASEQ:0000010
 name: pairwise sequence alignment application
-is_a: IAO:0000594
+is_a: IAO:0000594 ! software application
 property_value: definition "A software application that implements a pairwise sequence alignment algorithm to attempt to align two molecular sequences (nucleic acid or protein sequences)." xsd:string
 property_value: IAO:0000117 "PERSON: Junhyong Kim" xsd:string
 property_value: IAO:0000117 "PERSON: Stephen A. Fisher" xsd:string
@@ -105,7 +665,7 @@ property_value: IAO:0000117 "PERSON: Stephen A. Fisher" xsd:string
 [Term]
 id: ORNASEQ:0000011
 name: region of material anatomical entity
-is_a: UBERON:0000465
+is_a: UBERON:0000465 ! material anatomical entity
 property_value: definition "An area within a material anatomical entity that is distinct from the other areas of that entity such as the parietal cortex, hippocampus CA1 and amygdala." xsd:string
 property_value: IAO:0000117 "PERSON: Junhyong Kim" xsd:string
 property_value: IAO:0000117 "PERSON: Stephen A. Fisher" xsd:string
@@ -113,9 +673,9 @@ property_value: IAO:0000117 "PERSON: Stephen A. Fisher" xsd:string
 [Term]
 id: ORNASEQ:0000012
 name: RNA harvest compound
-is_a: CHEBI:23367
-relationship: OBI:0000312 OBI:0000094
-relationship: RO:0000087 OBI:0000091
+is_a: CHEBI:23367 ! molecular entity
+relationship: OBI:0000312 OBI:0000094 ! is_specified_output_of material processing
+relationship: RO:0000087 OBI:0000091 ! has role detector reagent role
 property_value: definition "A molecular entity that is an engineered molecule which enables the collection of RNA from cells." xsd:string
 property_value: IAO:0000117 "PERSON: Junhyong Kim" xsd:string
 property_value: IAO:0000117 "PERSON: Stephen A. Fisher" xsd:string
@@ -123,7 +683,7 @@ property_value: IAO:0000117 "PERSON: Stephen A. Fisher" xsd:string
 [Term]
 id: ORNASEQ:0000013
 name: specimen harvest source type
-is_a: BFO:0000040
+is_a: BFO:0000040 ! material entity
 property_value: definition "A material entity that contained the specimen during harvesting such as a primary culture, tissue, or fixed section." xsd:string
 property_value: IAO:0000117 "PERSON: Junhyong Kim" xsd:string
 property_value: IAO:0000117 "PERSON: Stephen A. Fisher" xsd:string
@@ -131,7 +691,7 @@ property_value: IAO:0000117 "PERSON: Stephen A. Fisher" xsd:string
 [Term]
 id: ORNASEQ:0000014
 name: specimen harvest source unit
-is_a: BFO:0000040
+is_a: BFO:0000040 ! material entity
 property_value: definition "A material entity that represents the number of number of material entities used during harvesting; for example, a single cell, pooled single cells, tissue, a culture dish, or a coverslip." xsd:string
 property_value: IAO:0000117 "PERSON: Junhyong Kim" xsd:string
 property_value: IAO:0000117 "PERSON: Stephen A. Fisher" xsd:string
@@ -157,9 +717,25 @@ property_value: IAO:0000119 doi:10.1038/nmeth.2804 xsd:string
 [Term]
 id: ORNASEQ:0000017
 name: verse
-is_a: OBI:0002467
+is_a: OBI:0002467 ! alignment counting application
 property_value: definition "An alignment counting application that assigns gene features to genomic alignments using a hierarchical assignment scheme, which allows simultaneous quantification of multiple feature types or annotation levels without repeatedly assigning reads." xsd:string
 property_value: IAO:0000117 "PERSON: Junhyong Kim" xsd:string
 property_value: IAO:0000117 "PERSON: Stephen A. Fisher" xsd:string
 property_value: IAO:0000119 http://kim.bio.upenn.edu/software/verse.shtml xsd:string
+
+[Term]
+id: SO:0001505 ! reference_genome
+is_a: EFO:0004420
+
+[Term]
+id: TAXRANK:0000000 ! taxonomic_rank
+is_a: GENEPIO:0001170 ! organism datum
+
+[Term]
+id: TAXRANK:0000006 ! species
+is_a: TAXRANK:0000000 ! taxonomic_rank
+
+[Term]
+id: UBERON:0000465 ! material anatomical entity
+is_a: BFO:0000040 ! material entity
 

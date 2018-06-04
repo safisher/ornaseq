@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <group id="Folder Repository, directory=, recursive=false, Auto-Update=false, version=2" prefer="public" xml:base=""/>
-	<uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/ornaseq/imports/terms_import.owl" uri="imports/terms_import.owl"/>
-	<uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/ornaseq/imports/properties_import.owl" uri="imports/properties_import.owl"/>
+	<uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/ornaseq/terms_import.owl" uri="imports/terms_import.owl"/>
+	<uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/ornaseq/properties_import.owl" uri="imports/properties_import.owl"/>
 </catalog>
