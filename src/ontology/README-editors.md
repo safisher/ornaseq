@@ -19,9 +19,9 @@ Not sure why NCIT_C25402 is flagged as an error in terms_input.
 
 2. Need to edit 'imports/terms_import.owl', resolving following errors (i.e. redundent label fields)
  * 2018-05-17 20:28:17,553 ERROR org.obolibrary.obo2owl.OWLAPIOwl2Obo - Duplicate clause 'name( neuron)' generated in frame: CL:0000540
-   remove this line:         <rdfs:label xml:lang="en">neuron</rdfs:label>
+   * remove this line:         `<rdfs:label xml:lang="en">neuron</rdfs:label>`
  * 2018-05-17 20:28:17,559 ERROR org.obolibrary.obo2owl.OWLAPIOwl2Obo - Duplicate clause 'name( cell)' generated in frame: CL:0000000
-   remove this line:         <rdfs:label xml:lang="en">cell</rdfs:label>
+   * remove this line:         `<rdfs:label xml:lang="en">cell</rdfs:label>`
 
 3. Generate OntoFox obo files
 
