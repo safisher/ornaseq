@@ -1,4 +1,5 @@
 format-version: 1.2
+data-version: 2019-07-08
 remark: The following ontology is provided by Stephen A Fisher and Junhyong Kim to annotate next-generation sequencing experiments performed on RNA.
 ontology: ornaseq
 property_value: http://purl.org/dc/elements/1.1/contributor "Junhyong Kim" xsd:string

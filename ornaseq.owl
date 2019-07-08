@@ -9,6 +9,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/ornaseq.owl">
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/ornaseq/2019-07-08/ornaseq.owl"/>
         <dc:contributor>Junhyong Kim</dc:contributor>
         <dc:contributor>Stephen A Fisher</dc:contributor>
         <dc:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>

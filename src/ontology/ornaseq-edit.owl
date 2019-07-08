@@ -11,6 +11,7 @@
 
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/ornaseq.owl">
         <dc:title xml:lang="en">Ontology for RNA sequencing (ORNASEQ)</dc:title>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/ornaseq/2019-07-08/ornaseq.owl"/>
         <dc:contributor>Stephen A Fisher</dc:contributor>
         <dc:contributor>Junhyong Kim</dc:contributor>
         <dc:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
